@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Calc.js"></script>
+</head>
+
+<body>
+    <div class = "box">
+        
+        <div class = "display">
+            <input type = "text" size = "18" id = "d">
+        </div>
+        
+        <div class = "keys">
+            <p>
+                <input type="button" class="button gray" value="mrc" onclick='erase("Created....................")'>
+                <input type="button" class="button gray" value="m-" onclick='erase("...............by............")'>
+                <input type="button" class="button gray" value="m+" onclick='erase(".....................Ankit")'>
+                <input type="button" class="button pink" value="/" onclick='Value("/")'>
+            </p>
+            
+            <p>
+                <input type="button" class="button black" value="7" onclick='Value("7")'>
+                <input type="button" class="button black" value="8" onclick='Value("8")'>
+                <input type="button" class="button black" value="9" onclick='Value("9")'>
+                <input type="button" class="button pink" value="*" onclick='Value("*")'>
+            </p>
+            
+            <p>
+                <input type="button" class="button black" value="4" onclick='Value("4")'>
+                <input type="button" class="button black" value="5" onclick='Value("5")'>
+                <input type="button" class="button black" value="6" onclick='Value("6")'>
+                <input type="button" class="button pink" value="-" onclick='Value("-")'>
+            </p>
+            
+            <p>
+                <input type="button" class="button black" value="1" onclick='Value("1")'>
+                <input type="button" class="button black" value="2" onclick='Value("2")'>
+                <input type="button" class="button black" value="3" onclick='Value("3")'>
+                <input type="button" class="button pink" value="+" onclick='Value("+")'>
+            </p>
+            
+            <p>
+                <input type="button" class="button black" value="0" onclick='Value("0")'>
+                <input type="button" class="button black" value="." onclick='Value(".")'>
+                <input type="button" class="button black" value="C" onclick='erase("")'>
+                <input type="button" class="button orange" value="=" onclick='solve()'>
+            </p>
+        </div>
+        
+    </div>
+</body>
+
+</html>
